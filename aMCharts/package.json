@@ -1,0 +1,43 @@
+{
+  "name": "amcharts",
+  "widgetName": "AMCharts",
+  "version": "1.0.0",
+  "description": "This widget is used to display different kind of charts with the use of AM framework.",
+  "copyright": "© Mendix Technology BV 2022. All rights reserved.",
+  "author": "Rishi",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "projectPath": "../../",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": 3000
+  },
+  "packagePath": "mx omega technologies",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.24.0",
+    "@types/big.js": "^6.0.2"
+  },
+  "dependencies": {
+    "@amcharts/amcharts5": "^5.4.7",
+    "classnames": "^2.2.6"
+  },
+  "resolutions": {
+    "react": "18.2.0",
+    "react-native": "0.70.7"
+  },
+  "overrides": {
+    "react": "18.2.0",
+    "react-native": "0.70.7"
+  }
+}

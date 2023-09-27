@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mx omega technologies.amcharts.AMCharts" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>AMCharts</name>
+    <description>This widget is used to display different kind of charts with the use of AM framework.</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="colorEnum" type="enumeration" defaultValue="Bar">
+                <caption>Chart Type</caption>
+                <description>Select the chart type</description>
+                <enumerationValues>
+                    <enumerationValue key="Bar">Bar</enumerationValue>
+                    <enumerationValue key="Pie">Donut</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="myBlockTitle" type="textTemplate" required="false" multiline="true">
+                <caption>JSON for chart</caption>
+                <description>Enter the JSON data here.
+Note: Use "{{,}}" (Double braces) when using static data.
+                </description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
